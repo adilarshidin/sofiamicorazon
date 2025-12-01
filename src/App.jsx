@@ -17,8 +17,8 @@ const App = () => {
   };
   const imgStyles = {
     height: 'auto',
-    maxWidth: '25%',
-    margin: '0 1rem',
+    width: 'clamp(150px, 40vw, 300px)',
+    margin: '1rem 0',
   };
   const headerStyles = {
     fontFamily: "'Great Vibes', cursive",
