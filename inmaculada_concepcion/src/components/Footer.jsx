@@ -3,7 +3,7 @@ import { FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   padding: 1%;
 
   display: flex;

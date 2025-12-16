@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ViewWrapper = styled.div`
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   padding: 2%;
 `;
 

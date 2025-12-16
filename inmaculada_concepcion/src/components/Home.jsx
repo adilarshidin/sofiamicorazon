@@ -12,7 +12,7 @@ const images = [
   secondChurchImage,
   thirdChurchImage,
   fourthChurchImage,
-  fifthChurchImage
+  fifthChurchImage,
 ];
 
 const Wrapper = styled.div`
@@ -74,12 +74,7 @@ const Home = () => {
     <Wrapper>
       <ImageContainer>
         {images.map((img, index) => (
-          <Image
-            key={img}
-            src={img}
-            alt=""
-            $active={index === currentIndex}
-          />
+          <Image key={img} src={img} alt="" $active={index === currentIndex} />
         ))}
 
         <Paragraph>
