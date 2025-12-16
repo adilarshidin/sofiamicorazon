@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import tabletImage from "../assets/4.jpeg";
-import confessionBoothImage from "../assets/5.jpeg";
+import tabletImage from "../assets/4.webp";
+import confessionBoothImage from "../assets/5.webp";
 import ViewWrapper from "./ViewWrapper";
 
 const ImageBlock = styled.div`

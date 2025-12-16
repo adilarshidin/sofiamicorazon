@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import eventsImage from "../assets/2.jpeg";
-import servicesImage from "../assets/3.jpeg";
+import eventsImage from "../assets/2.webp";
+import servicesImage from "../assets/3.webp";
 import ViewWrapper from "./ViewWrapper";
 
 const ServicesWrapper = styled.div`

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 
-import firstChurchImage from "../assets/1.jpeg";
-import secondChurchImage from "../assets/6.jpeg";
-import thirdChurchImage from "../assets/7.jpeg";
-import fourthChurchImage from "../assets/8.jpeg";
-import fifthChurchImage from "../assets/9.jpeg";
+import firstChurchImage from "../assets/1.webp";
+import secondChurchImage from "../assets/6.webp";
+import thirdChurchImage from "../assets/7.webp";
+import fourthChurchImage from "../assets/8.webp";
+import fifthChurchImage from "../assets/9.webp";
 
 const images = [
   firstChurchImage,
