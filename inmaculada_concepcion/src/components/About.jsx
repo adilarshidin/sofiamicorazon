@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { IoMailSharp } from "react-icons/io5";
 
 import tabletImage from "../assets/4.webp";
 import confessionBoothImage from "../assets/5.webp";
@@ -37,9 +39,15 @@ const MapWrapper = styled.div`
   }
 `;
 
+const TextWrapper = styled.p`
+  display: flex;
+  align-items: center;
+`;
+
 const Map = () => (
   <MapWrapper>
     <h1>Ubicación en el mapa</h1>
+    <TextWrapper><FaLocationDot /> Rúa Toledo, 5 (Vigo). 36205, Vigo, Pontevedra.</TextWrapper>
     <iframe
       title="Ubicación de la iglesia"
       src="https://vigo.maps.arcgis.com/apps/webappviewer/index.html?id=95730d02d392425da3fe379a2336ac15&marker=-8.70044231414795,42.23233848882558&level=17"
@@ -70,6 +78,22 @@ const About = () => {
         realización de los triángulos exteriores como para la plataforma del
         coro.
       </p>
+      <br />
+      <p>Párroco: D. Miguel Ángel Castro Quinteiro.</p>
+      <TextWrapper><FaPhone /> <a href="tel:986274622">986274622</a></TextWrapper>
+      <TextWrapper><IoMailSharp /> <a href="mailto:vigo.inmaculada@diocesetuivigo.org">vigo.inmaculada@diocesetuivigo.org</a></TextWrapper>
+      <br />
+      <div>
+        <h2>Horarios de misas</h2>
+        <p>Diario: 9:30 y 18:30 horas.</p>
+        <p>Sábados: 18:30 y 20:00 horas.</p>
+        <p>Domingos y festivos: 10:00, 12:00 y 13:00 horas.</p>
+        <br />
+        <p>De junio a septiembre:</p>
+        <p>Diario: 9:30 y 20:00 horas.</p>
+        <p>Sábados: 18:30 y 20:00 horas.</p>
+        <p>Domingos y festivos: 10:00 y 12:30 horas.</p>
+      </div>
       <Map />
     </ViewWrapper>
   );

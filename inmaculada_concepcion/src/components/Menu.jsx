@@ -32,7 +32,7 @@ const Image = styled.img`
 const Menu = () => {
   return (
     <StyledMenu>
-      <Image src={crossIcon} alt="icono de la cruz católica dorada" />
+      <a href="https://www.diocesetuivigo.org/"><Image src={crossIcon} alt="icono de la cruz católica dorada" /></a>
       <MenuLink to={"/"}>Inicio</MenuLink>
       <MenuLink to={"/about"}>La Iglesia</MenuLink>
       <MenuLink to={"/services"}>Servicios</MenuLink>
