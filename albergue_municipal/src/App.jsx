@@ -13,7 +13,7 @@ const StyledHR = styled.hr`
   margin: 2%;
   border: solid 3px;
   border-color: #cd1c18;
-  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);; 
+  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
 `;
 
 const App = () => {

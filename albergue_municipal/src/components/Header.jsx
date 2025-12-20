@@ -15,7 +15,7 @@ const Bulge = styled.div`
   border-radius: 50%;
   border: solid 5px;
   border-color: #cd1c18;
-  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);; 
+  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
 
   background-color: #f2f0ef;
   background-image: linear-gradient(315deg, #f2f0ef 0%, #fbceb1 74%);
@@ -42,12 +42,11 @@ const IconLink = styled.a`
 
 const StyledHeader = styled.header`
   position: relative;
-  height: 72px;
   z-index: 1;
 
   border: solid 5px;
   border-color: #cd1c18;
-  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);; 
+  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
 
   background-color: #f2f0ef;
   background-image: linear-gradient(315deg, #f2f0ef 0%, #fbceb1 74%);

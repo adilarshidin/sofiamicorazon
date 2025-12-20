@@ -33,10 +33,7 @@ const Togglable = ({ label, children }) => {
     <Container onClick={toggleVisibility}>
       <h3>{label}</h3>
 
-      <Content
-        $visible={visible}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <Content $visible={visible} onClick={(e) => e.stopPropagation()}>
         {children}
       </Content>
     </Container>

@@ -33,7 +33,7 @@ const Image = styled.img`
 
   border: solid 5px;
   border-color: #cd1c18;
-  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);; 
+  border-background: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
   border-radius: 10%;
 `;
 

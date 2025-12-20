@@ -34,10 +34,14 @@ const AdressAndContacts = () => {
       <Wrapper>
         <h2>UBICACIÓN:</h2>
         <p>Rúa Marqués de Valterra, nº6</p>
-        <StyledA href="/address.pdf" download="direcciones.pdf">Descargar archivo de direcciones</StyledA>
+        <StyledA href="/address.pdf" download="direcciones.pdf">
+          Descargar archivo de direcciones
+        </StyledA>
       </Wrapper>
       <MapWrapper>
-        <TextWrapper><FaLocationDot /> Rúa Toledo, 5 (Vigo). 36205, Vigo, Pontevedra.</TextWrapper>
+        <TextWrapper>
+          <FaLocationDot /> Rúa Toledo, 5 (Vigo). 36205, Vigo, Pontevedra.
+        </TextWrapper>
         <iframe
           title="Ubicación del albergue"
           src="https://vigo.maps.arcgis.com/apps/webappviewer/index.html?id=95730d02d392425da3fe379a2336ac15&marker=-8.732,42.234&level=17"
@@ -47,7 +51,11 @@ const AdressAndContacts = () => {
       </MapWrapper>
       <Wrapper>
         <h2>Teléfono de contacto:</h2>
-        <StyledA href="tel:986294280"><TextWrapper><FaPhone /> 986294280</TextWrapper></StyledA>
+        <StyledA href="tel:986294280">
+          <TextWrapper>
+            <FaPhone /> 986294280
+          </TextWrapper>
+        </StyledA>
       </Wrapper>
     </div>
   );

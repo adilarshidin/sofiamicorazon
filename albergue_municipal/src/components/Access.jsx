@@ -48,28 +48,68 @@ const HowToTextWrapper = styled.div`
 const Access = () => {
   return (
     <Wrapper>
-      <StyledH2>Acceso a los programas y servicios prestados en el Centro Integral de Inclusión y Emergencia Social (CIIES)</StyledH2>
+      <StyledH2>
+        Acceso a los programas y servicios prestados en el Centro Integral de
+        Inclusión y Emergencia Social (CIIES)
+      </StyledH2>
       <br />
 
       <Togglable label="A quién está dirigido">
-        <p>Con carácter general, personas mayores de edad y menores de 65 años que acrediten su identidad, carezcan de alojamiento y de recursos económicos suficientes y puedan desarrollar de forma autónoma las tareas de la vida diaria (AVD). Excepcionalmente, con la autorización previa de la Dirección Municipal, podrán acceder al servicio personas que no cumplan los requisitos de edad y autonomía.</p>
+        <p>
+          Con carácter general, personas mayores de edad y menores de 65 años
+          que acrediten su identidad, carezcan de alojamiento y de recursos
+          económicos suficientes y puedan desarrollar de forma autónoma las
+          tareas de la vida diaria (AVD). Excepcionalmente, con la autorización
+          previa de la Dirección Municipal, podrán acceder al servicio personas
+          que no cumplan los requisitos de edad y autonomía.
+        </p>
       </Togglable>
       <br />
 
       <Togglable label="Cómo hacerlo">
         <Note>
-          NOTA: Puede consultar los <StyledLink to="/services/online">solicitantes obligados a relacionarse con la administración de manera electrónica.</StyledLink>
+          NOTA: Puede consultar los{" "}
+          <StyledLink to="/services/online">
+            solicitantes obligados a relacionarse con la administración de
+            manera electrónica.
+          </StyledLink>
         </Note>
-        <Paragraph>Las vías de acceso así como ciertos requisitos para la admisión varían en función de cada uno de los servicios que ofrece el CIIES aunque, de manera general, el acceso se produce bien por solicitud directa de la persona usuaria, bien por derivación desde los Servicios Sociales Comunitarios Básicos, otros servicios o programas del propio CIIES o de otras entidades e instituciones.</Paragraph>
-        <Paragraph>Con carácter general, cuando demanda sea superior a la oferta de los servicios del CIIES tendrán preferencia las personas con menores recursos económicos.</Paragraph>
+        <Paragraph>
+          Las vías de acceso así como ciertos requisitos para la admisión varían
+          en función de cada uno de los servicios que ofrece el CIIES aunque, de
+          manera general, el acceso se produce bien por solicitud directa de la
+          persona usuaria, bien por derivación desde los Servicios Sociales
+          Comunitarios Básicos, otros servicios o programas del propio CIIES o
+          de otras entidades e instituciones.
+        </Paragraph>
+        <Paragraph>
+          Con carácter general, cuando demanda sea superior a la oferta de los
+          servicios del CIIES tendrán preferencia las personas con menores
+          recursos económicos.
+        </Paragraph>
         <br />
         <h3>Presencialmente</h3>
         <HowToInnerWrapper>
           <IoIosMan size={100} />
           <HowToTextWrapper>
-            <Paragraph>Solo para los solicitantes no obligados a relacionarse telemáticamente con la administración (puede consultar los <StyledLink to="/services/online">solicitantes obligados a relacionarse con la administración de manera electrónica</StyledLink>).</Paragraph>
-            <Paragraph>Presentando el impreso de solicitud y demás documentación requerida en el Registro General del Ayuntamiento.</Paragraph>
-            <Paragraph>O bien solicitando cita previa en la zona de atención social (UTS) que le corresponda por domicilio y presentando la solicitud y documentación requerida.</Paragraph>
+            <Paragraph>
+              Solo para los solicitantes no obligados a relacionarse
+              telemáticamente con la administración (puede consultar los{" "}
+              <StyledLink to="/services/online">
+                solicitantes obligados a relacionarse con la administración de
+                manera electrónica
+              </StyledLink>
+              ).
+            </Paragraph>
+            <Paragraph>
+              Presentando el impreso de solicitud y demás documentación
+              requerida en el Registro General del Ayuntamiento.
+            </Paragraph>
+            <Paragraph>
+              O bien solicitando cita previa en la zona de atención social (UTS)
+              que le corresponda por domicilio y presentando la solicitud y
+              documentación requerida.
+            </Paragraph>
             <StyledA href="http://hoxe.vigo.org/movemonos/atencionsocial_uts.php?lang=cas">
               Direcciones y Teléfonos de las UTS
             </StyledA>
@@ -80,16 +120,33 @@ const Access = () => {
 
       <Togglable label="Documentación requerida">
         <ul>
-          <li><StyledA href="/application.pdf" download="solicitud.pdf">Solicitud programas y servicios prestados en el CIIES</StyledA></li>
+          <li>
+            <StyledA href="/application.pdf" download="solicitud.pdf">
+              Solicitud programas y servicios prestados en el CIIES
+            </StyledA>
+          </li>
           <li>Justificante de ingresos mensuales de la unidad familiar</li>
-          <li><StyledA href="/medical_form.pdf" download="informe_medica.pdf">Informe médico para CIIES</StyledA></li>
+          <li>
+            <StyledA href="/medical_form.pdf" download="informe_medica.pdf">
+              Informe médico para CIIES
+            </StyledA>
+          </li>
         </ul>
       </Togglable>
       <br />
 
       <Togglable label="Normativa Municipal">
-        <Paragraph><StyledA href="/regulations.pdf" download="reglamento.pdf">Reglamento de Régimen interior del Centro Integral de Inclusión y Emergencia Social (CIIES) del Ayuntamiento de Vigo</StyledA></Paragraph>
-        <Paragraph><StyledA href="/plan.pdf" download="servicios.pdf">CIIES - Servizos e recursos ofrecidos</StyledA></Paragraph>
+        <Paragraph>
+          <StyledA href="/regulations.pdf" download="reglamento.pdf">
+            Reglamento de Régimen interior del Centro Integral de Inclusión y
+            Emergencia Social (CIIES) del Ayuntamiento de Vigo
+          </StyledA>
+        </Paragraph>
+        <Paragraph>
+          <StyledA href="/plan.pdf" download="servicios.pdf">
+            CIIES - Servizos e recursos ofrecidos
+          </StyledA>
+        </Paragraph>
       </Togglable>
     </Wrapper>
   );

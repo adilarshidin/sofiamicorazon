@@ -3,8 +3,7 @@ import { styled } from "styled-components";
 import { Link } from "react-router";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import CityCouncelLogo from "../assets/concello-vigo-logo.png";
-import Button from "./Button";
+import CityCouncelLogo from "../assets/concello-vigo-logo.webp";
 
 const OuterWrapper = styled.div`
   width: 100%;
@@ -61,15 +60,16 @@ const Navigation = styled.nav`
     flex-direction: column;
     background: white;
     border-top: 1px solid #ddd;
+    z-index: 2;
 
     ${({ $open }) =>
-    $open
-      ? `
+      $open
+        ? `
         max-height: 300px;
         opacity: 1;
         pointer-events: auto;
       `
-      : `
+        : `
         max-height: 0;
         opacity: 0;
         pointer-events: none;
@@ -79,7 +79,6 @@ const Navigation = styled.nav`
     transition: all 0.3s ease;
   }
 `;
-
 
 const Hamburger = styled.button`
   display: none;
@@ -98,8 +97,6 @@ const Menu = () => {
   const [open, setOpen] = useState(false);
   return (
     <OuterWrapper>
-      <h3>Centro Integral de Inclusión y Emergencia Social</h3>
-
       <InnerWrapper>
         <LogoLink href="https://hoxe.vigo.org/">
           <Image src={CityCouncelLogo} alt="Concello de Vigo logo" />
@@ -112,11 +109,19 @@ const Menu = () => {
           <RxHamburgerMenu />
         </Hamburger>
 
-        <Navigation>
-          <Button />
-          <MenuLink to="/">Inicio</MenuLink>
-          <MenuLink to="/services">Programas y servicios</MenuLink>
-          <MenuLink to="/contacts">Dirección y contactos</MenuLink>
+        <Navigation $open={open}>
+          <MenuLink to="/access" onClick={() => setOpen(false)}>
+            Solicitar acceso
+          </MenuLink>
+          <MenuLink to="/" onClick={() => setOpen(false)}>
+            Inicio
+          </MenuLink>
+          <MenuLink to="/services" onClick={() => setOpen(false)}>
+            Programas y servicios
+          </MenuLink>
+          <MenuLink to="/contacts" onClick={() => setOpen(false)}>
+            Dirección y contactos
+          </MenuLink>
         </Navigation>
       </InnerWrapper>
     </OuterWrapper>
