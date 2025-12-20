@@ -33,14 +33,13 @@ const AdressAndContacts = () => {
     <div>
       <Wrapper>
         <h2>UBICACIÓN:</h2>
-        <p>Rúa Marqués de Valterra, nº6</p>
         <StyledA href="/address.pdf" download="direcciones.pdf">
           Descargar archivo de direcciones
         </StyledA>
       </Wrapper>
       <MapWrapper>
         <TextWrapper>
-          <FaLocationDot /> Rúa Toledo, 5 (Vigo). 36205, Vigo, Pontevedra.
+          <FaLocationDot />Rúa Marqués de Valterra, nº6. Vigo, Pontevedra.
         </TextWrapper>
         <iframe
           title="Ubicación del albergue"
