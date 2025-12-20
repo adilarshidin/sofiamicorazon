@@ -36,13 +36,9 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const HowToInnerWrapper = styled.div`
+const TextWrapper = styled.p`
   display: flex;
-`;
-
-const HowToTextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  align-items: center;
 `;
 
 const Access = () => {
@@ -88,33 +84,32 @@ const Access = () => {
           recursos económicos.
         </Paragraph>
         <br />
-        <h3>Presencialmente</h3>
-        <HowToInnerWrapper>
-          <IoIosMan size={100} />
-          <HowToTextWrapper>
-            <Paragraph>
-              Solo para los solicitantes no obligados a relacionarse
-              telemáticamente con la administración (puede consultar los{" "}
-              <StyledLink to="/services/online">
-                solicitantes obligados a relacionarse con la administración de
-                manera electrónica
-              </StyledLink>
-              ).
-            </Paragraph>
-            <Paragraph>
-              Presentando el impreso de solicitud y demás documentación
-              requerida en el Registro General del Ayuntamiento.
-            </Paragraph>
-            <Paragraph>
-              O bien solicitando cita previa en la zona de atención social (UTS)
-              que le corresponda por domicilio y presentando la solicitud y
-              documentación requerida.
-            </Paragraph>
-            <StyledA href="http://hoxe.vigo.org/movemonos/atencionsocial_uts.php?lang=cas">
-              Direcciones y Teléfonos de las UTS
-            </StyledA>
-          </HowToTextWrapper>
-        </HowToInnerWrapper>
+        <h3>
+          <TextWrapper>
+            Presencialmente <IoIosMan />
+          </TextWrapper>
+        </h3>
+        <Paragraph>
+          Solo para los solicitantes no obligados a relacionarse telemáticamente
+          con la administración (puede consultar los{" "}
+          <StyledLink to="/services/online">
+            solicitantes obligados a relacionarse con la administración de
+            manera electrónica
+          </StyledLink>
+          ).
+        </Paragraph>
+        <Paragraph>
+          Presentando el impreso de solicitud y demás documentación requerida en
+          el Registro General del Ayuntamiento.
+        </Paragraph>
+        <Paragraph>
+          O bien solicitando cita previa en la zona de atención social (UTS) que
+          le corresponda por domicilio y presentando la solicitud y
+          documentación requerida.
+        </Paragraph>
+        <StyledA href="http://hoxe.vigo.org/movemonos/atencionsocial_uts.php?lang=cas">
+          Direcciones y Teléfonos de las UTS
+        </StyledA>
       </Togglable>
       <br />
 

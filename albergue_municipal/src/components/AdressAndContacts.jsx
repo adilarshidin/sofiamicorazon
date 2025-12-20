@@ -39,7 +39,8 @@ const AdressAndContacts = () => {
       </Wrapper>
       <MapWrapper>
         <TextWrapper>
-          <FaLocationDot />Rúa Marqués de Valterra, nº6. Vigo, Pontevedra.
+          <FaLocationDot />
+          Rúa Marqués de Valterra, nº6. Vigo, Pontevedra.
         </TextWrapper>
         <iframe
           title="Ubicación del albergue"

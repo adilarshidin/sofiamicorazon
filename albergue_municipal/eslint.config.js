@@ -28,13 +28,14 @@ export default [
         "warn",
         { allowConstantExport: true },
       ],
-      indent: ["error", 2, {
-        SwitchCase: 1,
-        ignoredNodes: [
-          "TemplateLiteral *",
-          "TaggedTemplateExpression *",
-        ],
-      }],
+      indent: [
+        "error",
+        2,
+        {
+          SwitchCase: 1,
+          ignoredNodes: ["TemplateLiteral *", "TaggedTemplateExpression *"],
+        },
+      ],
       "linebreak-style": ["error", "unix"],
       quotes: ["error", "double"],
       semi: ["error", "always"],
