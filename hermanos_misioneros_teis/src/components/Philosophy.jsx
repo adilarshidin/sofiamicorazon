@@ -1,19 +1,19 @@
 import { styled } from "styled-components";
 
+const Container = styled.div`
+  margin: 3%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkgreen;
+  background: white;
+`;
+
+const Paragraph = styled.p`
+  padding: 2%;
+`;
+
 const Philosophy = () => {
-  const Container = styled.div`
-    margin: 3%;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid darkgreen;
-    background: white;
-  `;
-
-  const Paragraph = styled.p`
-    padding: 2%;
-  `;
-
   return (
     <Container>
       <h2>Solidaridad, ayuda y ética</h2>

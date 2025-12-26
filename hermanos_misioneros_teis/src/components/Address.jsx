@@ -2,42 +2,42 @@ import { styled } from "styled-components";
 import { FaFax, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
-const Address = () => {
-  const Container = styled.div`
-    margin: 3%;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid darkgreen;
-    background: white;
-  `;
+const Container = styled.div`
+  margin: 3%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkgreen;
+  background: white;
+`;
 
-  const MapWrapper = styled.div`
+const MapWrapper = styled.div`
+  width: 100%;
+  height: 400px;
+  padding: 2%;
+  overflow: hidden;
+
+  iframe {
     width: 100%;
-    height: 400px;
-    padding: 2%;
-    overflow: hidden;
+    height: 100%;
+    border: none;
+  }
+`;
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  `;
+const TextWrapper = styled.p`
+  display: flex;
+  align-items: center;
+`;
 
-  const TextWrapper = styled.p`
-    display: flex;
-    align-items: center;
-  `;
+const Wrapper = styled.div`
+  padding: 2%;
+`;
 
-  const Wrapper = styled.div`
-    padding: 2%;
-  `;
+const StyledA = styled.a`
+  text-decoration: none;
+`;
 
-  const StyledA = styled.a`
-    text-decoration: none;
-  `;
-
+const Address = () => {
   return (
     <Container>
       <MapWrapper>

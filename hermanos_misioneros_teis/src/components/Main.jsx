@@ -3,28 +3,28 @@ import { styled } from "styled-components";
 import FirstMagazine from "../assets/magazine1.webp";
 import SecondMagazine from "../assets/magazine2.webp";
 
+const Container = styled.div`
+  margin: 3%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkgreen;
+  background: white;
+`;
+
+const Image = styled.img`
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid darkgreen;
+  background: rgb(1,50,32);
+  background: linear-gradient(159deg, rgba(1,50,32,1) 0%, rgba(57,255,20,1) 100%);
+`;
+
+const Paragraph = styled.p`
+  padding: 2%;
+`;
+
 const Main = () => {
-  const Container = styled.div`
-    margin: 3%;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid darkgreen;
-    background: white;
-  `;
-
-  const Image = styled.img`
-    margin: 2%;
-    padding: 2%;
-    border: 2px solid darkgreen;
-    background: rgb(1,50,32);
-    background: linear-gradient(159deg, rgba(1,50,32,1) 0%, rgba(57,255,20,1) 100%);
-  `;
-
-  const Paragraph = styled.p`
-    padding: 2%;
-  `;
-
   return (
     <Container>
       <h2>Quienes somos...</h2>
