@@ -28,14 +28,18 @@ const Image = styled.img`
   margin: 2%;
   padding: 2%;
   border: 2px solid darkgreen;
-  background: rgb(1,50,32);
-  background: linear-gradient(159deg, rgba(1,50,32,1) 0%, rgba(57,255,20,1) 100%);
+  background: rgb(1, 50, 32);
+  background: linear-gradient(
+    159deg,
+    rgba(1, 50, 32, 1) 0%,
+    rgba(57, 255, 20, 1) 100%
+  );
 `;
 
 const Publications = () => {
   return (
     <Container>
-      <h2 style={{ "paddingBottom": "3%" }}>Subvenciones</h2>
+      <h2 style={{ paddingBottom: "3%" }}>Subvenciones</h2>
       <ImagesContainer>
         <h3>Fomento Empleo Concello 2024</h3>
         <Image src={FirstImage} />

@@ -56,15 +56,18 @@ const Address = () => {
         <h2>Contactos:</h2>
         <StyledA href="tel:986451885">
           <TextWrapper>
-            <FaPhone />986451885 Tel
+            <FaPhone />
+            986451885 Tel
           </TextWrapper>
         </StyledA>
         <TextWrapper>
-          <FaFax />986453519 Fax
+          <FaFax />
+          986453519 Fax
         </TextWrapper>
         <StyledA href="mailto:hmdlep@hermanosmisioneros.org">
           <TextWrapper>
-            <IoMail />hmdlep@hermanosmisioneros.org
+            <IoMail />
+            hmdlep@hermanosmisioneros.org
           </TextWrapper>
         </StyledA>
       </Wrapper>

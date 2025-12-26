@@ -76,22 +76,15 @@ h6 {
 
 body {
   font-family:
-    "Inter",
-    "Segoe UI",
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    system-ui,
+    "Inter", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", system-ui,
     sans-serif;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family:
-    "Merriweather",
-    "Georgia",
-    "Times New Roman",
-    "Noto Serif",
-    serif;
+    "Merriweather", "Georgia", "Times New Roman", "Noto Serif", serif;
   font-weight: 700;
 }

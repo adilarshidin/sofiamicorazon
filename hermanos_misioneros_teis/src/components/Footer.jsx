@@ -21,7 +21,7 @@ const StyledTelegramIcon = styled(FaTelegram)`
 const Footer = () => {
   return (
     <StyledFooter>
-      <p style={{ "color": "white" }}>Hecho por: Adil Arshidin</p>
+      <p style={{ color: "white" }}>Hecho por: Adil Arshidin</p>
       <a href="https://wa.me/+34603249025" target="_blank">
         <StyledWhatsappIcon size={20} textAnchor="Whatsapp" />
       </a>

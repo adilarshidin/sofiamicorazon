@@ -10,7 +10,11 @@ const StyledNav = styled.nav`
   max-width: 900px;
   margin: 0 auto;
 
-  background: linear-gradient(159deg, rgba(1,50,32,1) 0%, rgba(57,255,20,1) 100%);
+  background: linear-gradient(
+    159deg,
+    rgba(1, 50, 32, 1) 0%,
+    rgba(57, 255, 20, 1) 100%
+  );
   border: solid 2px darkgreen;
   border-radius: 5px;
 
