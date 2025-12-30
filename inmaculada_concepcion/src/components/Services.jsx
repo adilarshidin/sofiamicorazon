@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { FaUsers, FaChurch } from "react-icons/fa";
 
 import eventsImage from "../assets/2.webp";
 import servicesImage from "../assets/3.webp";
 import ViewWrapper from "./ViewWrapper";
+import SEO from "./SEO";
 
 const ServicesWrapper = styled.div`
   display: flex;
@@ -11,12 +13,20 @@ const ServicesWrapper = styled.div`
   padding: 2%;
 `;
 
-const Row = styled.div`
+const Card = styled.div`
   display: flex;
-  align-items: center;
-  gap: 3rem;
-
   flex-direction: ${({ $reverse }) => ($reverse ? "row-reverse" : "row")};
+  gap: 3rem;
+  align-items: center;
+  background-color: #fefbf5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -39,7 +49,7 @@ const Text = styled.div`
   width: 50%;
   font-size: 1.05rem;
   line-height: 1.6;
-  color: #fff;
+  color: #333;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -49,45 +59,44 @@ const Text = styled.div`
 const Heading = styled.h2`
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #bfa34a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const Services = () => {
   return (
-    <ViewWrapper>
-      <ServicesWrapper>
-        <Row>
-          <Image
-            src={eventsImage}
-            alt="Actividades y celebraciones de la iglesia"
-          />
-          <Text>
-            <Heading>Actividades y celebraciones</Heading>
-            <p>
-              En nuestra iglesia celebramos las principales festividades
-              cristianas junto a la comunidad, creando un espacio de encuentro,
-              fe y alegría. Además, ofrecemos clases gratuitas de inglés y
-              español para todas las edades, así como diversas actividades
-              formativas y sociales abiertas a toda la comunidad.
-            </p>
-          </Text>
-        </Row>
+    <>
+      <SEO
+        title="Servicios Parroquiales | Inmaculada Concepción Vigo"
+        description="Servicios parroquiales, actividades comunitarias, clases y tablón de servicios de la Parroquia de la Inmaculada Concepción en Vigo."
+      />
+      <ViewWrapper>
+        <h1>Servicios</h1>
+        <ServicesWrapper>
+          <Card>
+            <Image src={eventsImage} loading="lazy" alt="Actividades y celebraciones de la Iglesia de la Inmaculada Concepción en Vigo" />
+            <Text>
+              <Heading><FaChurch /> Actividades y celebraciones</Heading>
+              <p>
+                Celebramos festividades cristianas junto a la comunidad y ofrecemos clases de inglés y español para todas las edades.
+              </p>
+            </Text>
+          </Card>
 
-        <Row $reverse>
-          <Image src={servicesImage} alt="Tablón de servicios y anuncios" />
-          <Text>
-            <Heading>Tablón de servicios</Heading>
-            <p>
-              Contamos con un tablón de servicios donde las personas pueden
-              publicar anuncios de empleo, ofrecer servicios profesionales o dar
-              a conocer habilidades que deseen compartir. Este espacio busca
-              fomentar la ayuda mutua, el apoyo comunitario y la colaboración
-              entre todos.
-            </p>
-          </Text>
-        </Row>
-      </ServicesWrapper>
-    </ViewWrapper>
+          <Card $reverse>
+            <Image src={servicesImage} loading="lazy" alt="Tablón de servicios y anuncios de la Iglesia de la Inmaculada Concepción en Vigo" />
+            <Text>
+              <Heading><FaUsers /> Tablón de servicios</Heading>
+              <p>
+                Publica anuncios de empleo, ofrece servicios profesionales o comparte tus habilidades con la comunidad.
+              </p>
+            </Text>
+          </Card>
+        </ServicesWrapper>
+      </ViewWrapper>
+    </>
   );
 };
 

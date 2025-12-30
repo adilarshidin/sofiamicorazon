@@ -2,33 +2,81 @@ import styled from "styled-components";
 import { FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
-  background-color: #000;
-  color: #fff;
-  padding: 1%;
+  background: linear-gradient(
+    to top,
+    #000,
+    #111
+  );
+  color: #ccc;
+  padding: 1.5rem 1rem;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-size: 0.9rem;
 `;
 
-const StyledWhatsappIcon = styled(FaWhatsapp)`
-  color: darkgreen;
+const Credits = styled.p`
+  margin: 0;
+  opacity: 0.8;
 `;
 
-const StyledTelegramIcon = styled(FaTelegram)`
-  color: blue;
+const Socials = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+const SocialLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  background: rgba(191, 163, 74, 0.15);
+  color: #bfa34a;
+
+  transition: all 0.25s ease;
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(191, 163, 74, 0.35);
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #bfa34a;
+    outline-offset: 2px;
+  }
 `;
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <p>Hecho por: Adil Arshidin</p>
-      <a href="https://wa.me/+34603249025" target="_blank">
-        <StyledWhatsappIcon size={20} textAnchor="Whatsapp" />
-      </a>
-      <a href="https://t.me/adiltherunningman">
-        <StyledTelegramIcon size={20} />
-      </a>
+      <Credits>Hecho con respeto por Adil Arshidin</Credits>
+
+      <Socials>
+        <SocialLink
+          href="https://wa.me/34603249025"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contactar por WhatsApp"
+        >
+          <FaWhatsapp size={18} />
+        </SocialLink>
+
+        <SocialLink
+          href="https://t.me/adiltherunningman"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contactar por Telegram"
+        >
+          <FaTelegram size={18} />
+        </SocialLink>
+      </Socials>
     </StyledFooter>
   );
 };

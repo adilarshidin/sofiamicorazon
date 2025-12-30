@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://inmaculada.onrender.com/sitemap.xml
