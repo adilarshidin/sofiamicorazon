@@ -69,7 +69,7 @@ const H1 = styled.h1`
   animation: ${fadeIn} 1s ease-in;
 `;
 
-const CTAButton = styled.a`
+const CTAButton = styled(Link)`
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 2rem;
@@ -131,10 +131,9 @@ const Home = () => {
             <br />
             Mateo 18:20
             <br />
-            <Link to="/services">
-            <CTAButton title="Ir a los servicios parroquiales"
+            <CTAButton to="/services"
+              title="Ir a los servicios parroquiales"
               aria-label="Ver la página de servicios de la parroquia">Ver Servicios</CTAButton>
-            </Link>
           </H1>
         </ImageContainer>
       </Wrapper>
