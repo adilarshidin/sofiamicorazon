@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaWhatsapp, FaTelegram } from "react-icons/fa";
+import { FaWhatsapp, FaTelegram, FaInstagram } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
   background: linear-gradient(to top, #000, #111);
@@ -71,6 +71,14 @@ const Footer = () => {
           aria-label="Contactar por Telegram"
         >
           <FaTelegram size={18} />
+        </SocialLink>
+
+        <SocialLink
+          href="https://www.instagram.com/adil_the_running_man/"
+          rel="noopener noreferrer"
+          aria-label="Contactar por Instagram"
+        >
+          <FaInstagram size={18} />
         </SocialLink>
       </Socials>
     </StyledFooter>
