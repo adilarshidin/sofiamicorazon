@@ -159,7 +159,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
     outline: 2px solid #bfa34a;
     outline-offset: 2px;
   }
-`,T2=()=>j.jsxs(S2,{children:[j.jsx(E2,{children:"Hecho con respeto por Adil Arshidin"}),j.jsxs(z2,{children:[j.jsx(Jm,{href:"https://wa.me/34603249025",target:"_blank",rel:"noopener noreferrer","aria-label":"Contactar por WhatsApp",children:j.jsx(u2,{size:18})}),j.jsx(Jm,{href:"https://t.me/adiltherunningman",target:"_blank",rel:"noopener noreferrer","aria-label":"Contactar por Telegram",children:j.jsx(n2,{size:18})})]})]}),x2="/assets/1-CmfdZLMd.webp",A2="/assets/6-CSp8iBfQ.webp",C2="/assets/7-Duwx89sA.webp",O2="/assets/8-BrvR67EK.webp",_2="/assets/9-Cg1bFz5S.webp",ho=({title:u,description:c})=>(R.useEffect(()=>{if(u&&(document.title=u),c){let r=document.querySelector('meta[name="description"]');r||(r=document.createElement("meta"),r.name="description",document.head.appendChild(r)),r.content=c}},[u,c]),null),$m=[x2,A2,C2,O2,_2],M2=Wg`
+`,T2=()=>j.jsxs(S2,{children:[j.jsx(E2,{children:"Hecho con respeto por Adil Arshidin"}),j.jsxs(z2,{children:[j.jsx(Jm,{href:"https://wa.me/34603249025",target:"_blank",rel:"noopener noreferrer","aria-label":"Contactar por WhatsApp",children:j.jsx(u2,{size:18})}),j.jsx(Jm,{href:"https://t.me/adiltherunningman",target:"_blank",rel:"noopener noreferrer","aria-label":"Contactar por Telegram",children:j.jsx(n2,{size:18})})]})]}),x2="/assets/1-CmfdZLMd.webp",A2="/assets/6-CSp8iBfQ.webp",C2="/assets/7-Duwx89sA.webp",O2="/assets/8-BrvR67EK.webp",_2="/assets/9-Cg1bFz5S.webp",ho=({title:u,description:c})=>(R.useEffect(()=>{if(u&&(document.title=u),c){let r=document.querySelector("meta[name='description']");r||(r=document.createElement("meta"),r.name="description",document.head.appendChild(r)),r.content=c}},[u,c]),null),$m=[x2,A2,C2,O2,_2],M2=Wg`
   from { opacity: 0; }
   to { opacity: 1; }
 `,R2=ot.div`
@@ -228,7 +228,9 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
   font-weight: 600;
   text-decoration: none;
 
-  transition: transform 0.25s ease, background-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
 
   &:hover {
     background-color: #e5d8b0;

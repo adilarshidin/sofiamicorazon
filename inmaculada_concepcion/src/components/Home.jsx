@@ -7,7 +7,6 @@ import thirdChurchImage from "../assets/7.webp";
 import fourthChurchImage from "../assets/8.webp";
 import fifthChurchImage from "../assets/9.webp";
 import SEO from "./SEO";
-import { Link } from "react-router";
 
 const images = [
   firstChurchImage,
@@ -102,7 +101,9 @@ const CTAButton = styled.a`
   font-weight: 600;
   text-decoration: none;
 
-  transition: transform 0.25s ease, background-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
 
   &:hover {
     background-color: #e5d8b0;
@@ -160,14 +161,13 @@ const Home = () => {
             <H1>Parroquia de la Inmaculada Concepción</H1>
 
             <Blockquote>
-              “Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos.”
+              “Porque donde están dos o tres congregados en mi nombre, allí
+              estoy yo en medio de ellos.”
               <br />
               <small>Mateo 18:20</small>
             </Blockquote>
 
-            <CTAButton href="/services">
-              Ver Servicios
-            </CTAButton>
+            <CTAButton href="/services">Ver Servicios</CTAButton>
           </HeroContent>
         </ImageContainer>
       </Wrapper>
