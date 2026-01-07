@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { FaFacebook, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 
 import tabletImage from "../assets/4.webp";
@@ -92,11 +92,11 @@ const StyledLink = styled.a`
 const About = () => (
   <>
     <SEO
-      title="La Iglesia | Parroquia de la Inmaculada Concepción"
+      title="La Iglesia en Vigo | Parroquia de la Inmaculada Concepción"
       description="Historia, arquitectura y horarios de misas de la Parroquia de la Inmaculada Concepción en Vigo."
     />
     <ViewWrapper>
-      <h1>Parroquia de la Inmaculada Concepción</h1>
+      <h1>La Iglesia de la Inmaculada Concepción en Vigo</h1>
       <ImageBlock>
         <Image
           src={tabletImage}
@@ -146,6 +146,14 @@ const About = () => (
             vigo.inmaculada@diocesetuivigo.org
           </StyledLink>
         </TextWrapper>
+        <TextWrapper>
+          <IconCircle>
+            <FaFacebook />
+          </IconCircle>
+          <StyledLink href="https://www.facebook.com/p/Parroquia-Inmaculada-Concepci%C3%B3n-de-Vigo-100064541060687/">
+            Facebook
+          </StyledLink>
+        </TextWrapper>
       </Section>
 
       <Section id="horarios" style={{ scrollMarginTop: "25em" }}>
@@ -158,6 +166,11 @@ const About = () => (
         <p>Diario: 9:30 y 20:00 horas.</p>
         <p>Sábados: 18:30 y 20:00 horas.</p>
         <p>Domingos y festivos: 10:00 y 12:30 horas.</p>
+        <br />
+        <p>
+          Consulta también nuestras{" "}
+          <StyledLink href="/services">actividades y servicios parroquiales</StyledLink>.
+        </p>
       </Section>
 
       <MapWrapper>

@@ -70,10 +70,10 @@ const Services = () => {
     <>
       <SEO
         title="Servicios Parroquiales | Inmaculada Concepción Vigo"
-        description="Servicios parroquiales, actividades comunitarias, clases y tablón de servicios de la Parroquia de la Inmaculada Concepción en Vigo."
+        description="Servicios parroquiales de la Parroquia de la Inmaculada Concepción en Vigo. Consulta actividades, clases, tablón de servicios y horarios de misas."
       />
       <ViewWrapper>
-        <h1>Servicios</h1>
+        <h1>Servicios parroquiales de la Inmaculada Concepción</h1>
         <ServicesWrapper>
           <Card>
             <Image
@@ -83,11 +83,12 @@ const Services = () => {
             />
             <Text>
               <Heading>
-                <FaChurch /> Actividades y celebraciones
+                <FaChurch aria-hidden="true" /> Actividades y celebraciones junto a la comunidad de Vigo
               </Heading>
               <p>
-                Celebramos festividades cristianas junto a la comunidad y
-                ofrecemos clases de inglés y español para todas las edades.
+                Celebramos festividades cristianas junto a la comunidad de Vigo y
+                ofrecemos clases de inglés y español para todas las edades, fomentando
+                el encuentro, la formación y la ayuda mutua.
               </p>
             </Text>
           </Card>
@@ -105,6 +106,11 @@ const Services = () => {
               <p>
                 Publica anuncios de empleo, ofrece servicios profesionales o
                 comparte tus habilidades con la comunidad.
+              </p>
+              <p>
+                Consulta también los{" "}
+                <a href="/about#horarios">horarios de misas</a> y la información
+                sobre la iglesia.
               </p>
             </Text>
           </Card>
