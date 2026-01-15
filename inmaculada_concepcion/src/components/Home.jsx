@@ -100,7 +100,7 @@ const Paragraph = styled.p`
   border-radius: 8px;
 `;
 
-const CTAButton = styled.a`
+const CTAButton = styled(Link)`
   margin-top: 0.5rem;
   padding: 0.75rem 2.2rem;
 
@@ -119,6 +119,7 @@ const CTAButton = styled.a`
     transform: translateY(-2px);
   }
 `;
+
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -168,7 +169,7 @@ const Home = () => {
             </Paragraph>
 
             <CTAButton
-              href="/services"
+              to="/services"
               aria-label="Ver servicios y actividades de la parroquia"
             >
               Ver Servicios
