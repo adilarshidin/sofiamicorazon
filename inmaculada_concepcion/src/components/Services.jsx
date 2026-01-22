@@ -5,6 +5,7 @@ import eventsImage from "../assets/2.webp";
 import servicesImage from "../assets/3.webp";
 import ViewWrapper from "./ViewWrapper";
 import SEO from "./SEO";
+import { Link } from "react-router";
 
 const ServicesWrapper = styled.div`
   display: flex;
@@ -65,6 +66,18 @@ const Heading = styled.h2`
   gap: 0.5rem;
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: #000;
+  }
+`;
+
 const Services = () => {
   return (
     <>
@@ -109,7 +122,7 @@ const Services = () => {
               </p>
               <p>
                 Consulta también los{" "}
-                <a href="/about#horarios">horarios de misas</a> y la información
+                <StyledLink to="/about#horarios">horarios de misas</StyledLink> y la información
                 sobre la iglesia.
               </p>
             </Text>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaFacebook, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
+import { Link } from "react-router";
 
 import tabletImage from "../assets/4.webp";
 import confessionBoothImage from "../assets/5.webp";
@@ -76,7 +77,7 @@ const MapWrapper = styled.div`
   }
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   color: #2b2b2b;
   text-decoration: none;
   font-weight: 500;
@@ -136,7 +137,7 @@ const About = () => (
           <IconCircle>
             <FaPhone />
           </IconCircle>
-          <StyledLink href="tel:986274622">986274622</StyledLink>
+          <StyledLink href="tel:696759567">696759567</StyledLink>
         </TextWrapper>
         <TextWrapper>
           <IconCircle>
@@ -158,9 +159,11 @@ const About = () => (
 
       <Section id="horarios" style={{ scrollMarginTop: "25em" }}>
         <h2>Horarios de misas</h2>
+        <p>De octubre a mayo:</p>
         <p>Diario: 9:30 y 18:30 horas.</p>
         <p>Sábados: 18:30 y 20:00 horas.</p>
-        <p>Domingos y festivos: 10:00, 12:00 y 13:00 horas.</p>
+        <p>Domingos: 10:00, 12:00 y 13:00 horas.</p>
+        <p>Festivos: 10:00, 12:00</p>
         <br />
         <p>De junio a septiembre:</p>
         <p>Diario: 9:30 y 20:00 horas.</p>
@@ -169,7 +172,12 @@ const About = () => (
         <br />
         <p>
           Consulta también nuestras{" "}
-          <StyledLink href="/services">actividades y servicios parroquiales</StyledLink>.
+          <StyledLink
+            to="/services"
+            aria-label="Ver servicios y actividades de la parroquia"
+          >
+            actividades y servicios parroquiales
+          </StyledLink>.
         </p>
       </Section>
 
