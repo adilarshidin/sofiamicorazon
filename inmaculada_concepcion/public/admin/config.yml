@@ -3,7 +3,7 @@ backend:
   repo: "adilarshidin/websites"
   branch: master
 
-media_folder: "content/images"
+media_folder: "inmaculada_concepcion/content/images"
 
 collections:
   - name: "schedule"
@@ -11,6 +11,6 @@ collections:
     files:
       - name: "masses"
         label: "Misas"
-        file: "content/schedule/masses.md"
+        file: "inmaculada_concepcion/content/schedule/masses.md"
         fields:
           - { label: "Contenido", name: "body", widget: "markdown" }
